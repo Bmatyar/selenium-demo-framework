@@ -1,0 +1,11 @@
+<suite name="multipleBrowser">
+	<parameter name="browser" value="firefox" />
+	<test name="Mbrowser">
+	
+	<classes>
+		<class name="SeleniumConcepts.MultipleBrowsers">
+					
+		</class>		
+	</classes>	
+	</test>	
+</suite>

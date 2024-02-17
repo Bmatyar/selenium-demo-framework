@@ -1,0 +1,15 @@
+<suite name="SuiteParameters">
+	<parameter name="a" value="5" />
+	<parameter name="b" value="3" />
+	<test name="Sum">
+		<classes>
+			<class name="BlazeRegression.DemoBlaze.sum" />
+		</classes>
+	</test>
+
+	<test name="Multiply">
+		<classes>
+			<class name="BlazeRegression.DemoBlaze.mul" />
+		</classes>
+	</test>
+</suite> 

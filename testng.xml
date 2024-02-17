@@ -1,0 +1,37 @@
+<suite name="maven project suite">
+	<test name="esting1">
+		
+		<groups>
+			<run>
+				<include name="regression-test"/>
+			</run>
+			
+		</groups>
+		
+		<groups>
+			<run>
+				<include name="smoke-test"/>
+			</run>
+			
+		</groups>
+		
+		<classes>
+			<class name="BlazeRegression.DemoBlaze.TC3"></class>
+			<class name="BlazeRegression.DemoBlaze.TC1">
+				<Method>
+					<include name="test1"/>
+					<include name="test2"/>
+				</Method>
+				
+			</class>
+			<class name="BlazeRegression.DemoBlaze.TC2">
+			<Method>
+				<exclude name="test3">
+					
+				</exclude>
+			</Method>
+			
+			</class>
+		</classes>
+	</test>
+</suite>

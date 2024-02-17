@@ -1,0 +1,11 @@
+<suite name="Maven packages">
+	<test name="PackagesTestng">
+		<packages>
+			<package name="BlazeRegression.DemoBlaze"/>
+			
+		</packages>	
+			
+	</test>
+	
+	
+</suite>
