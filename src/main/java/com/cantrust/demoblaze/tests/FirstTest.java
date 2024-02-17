@@ -2,21 +2,15 @@ package com.cantrust.demoblaze.tests;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import com.cantrust.core.framework.BrowserUtils;
 import com.cantrust.core.framework.SeleniumUtils;
 import com.cantrust.demoblaze.pages.LoginPage;
 import com.cantrust.demoblaze.pages.SignUpPage;
-import com.cantrust.demoblaze.wrappers.LoginWrapper;
-import com.cantrust.demoblaze.wrappers.SignUpWrapper;
 
 public class FirstTest extends SeleniumUtils {
 	
@@ -61,6 +55,6 @@ public class FirstTest extends SeleniumUtils {
 			driver.close();
 		}*/
 		
-	}
+
 
 }
