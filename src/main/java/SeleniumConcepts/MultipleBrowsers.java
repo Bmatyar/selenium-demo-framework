@@ -35,7 +35,7 @@ public class MultipleBrowsers {
 	
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
