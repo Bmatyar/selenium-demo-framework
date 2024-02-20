@@ -2,6 +2,7 @@ package SeleniumConcepts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -20,7 +21,9 @@ public class MultipleBrowsers {
 			 driver = new FirefoxDriver();
 			driver.get("https://www.demoblaze.com/");
 		} else if (browser1.equalsIgnoreCase("Chrome")) {
-			 driver = new ChromeDriver();
+			 ChromeOptions options = new ChromeOptions();
+			 options.addArguments("--headed");
+			 driver = new ChromeDriver(options);
 			driver.get("https://www.demoblaze.com/");
 		} else if (browser1.equalsIgnoreCase("Edge")) {
 			driver = new EdgeDriver();
